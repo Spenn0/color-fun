@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  
 }
 .main-section {
   display: flex;
@@ -9,22 +8,14 @@ body {
 }
 .section1 {
   width: 100vw;
-  height: 500px;
+  height: 200px;
   background: sandybrown;
   box-sizing: border-box;
   overflow: hidden;
   position: fixed;
   /* display: table-cell; */
 }
-.section2 {
-  width: 100vw;
-  height: 1000px;
-  background: sandybrown;
-  box-sizing: border-box;
-  overflow: hidden;
-  /* position: absolute;  */
-  /* display: table-cell; */
-}
+
 .wrapper {
   height: 100%;
   width: 50%;
@@ -35,20 +26,40 @@ body {
   top: 0;
   left: 0;
 }
+
 .sliding {
   position: absolute;
-  top: 50%;
+  top: 2%;
   white-space: nowrap;
-  font-size: 8em;
+  font-size: 4.75em;
   line-height: 220px;
   overflow: hidden;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   animation: animate 20s linear infinite;
 }
-.scrolling{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.section2 {
+  width: 100vw;
+  height: 10000px;
+  background: rgb(247, 82, 82);
+  box-sizing: border-box;
+  overflow: hidden;
+  /* position: absolute;  */
+  /* display: table-cell; */
+}
+.wrapper2 {
+  /* height: 100%;
+    width: 50%;
+    background: salmon;
+    overflow: hidden;
+    color: rgb(247, 82, 82);
+    position: absolute;
+    top: 0;
+    left: 0; */
+}
+.scrolling {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .box {
   height: 500px;
@@ -64,13 +75,11 @@ body {
   height: 400px;
   width: 400px;
 }
-/*  animation for spudd moving horizontally /*
-
 @keyframes animate {
   0% {
-    transform: translate(0, 50%);
+    transform: translate(0, 0%);
   }
   100% {
-    transform: translate(-100%, -0%);
+    transform: translate(-50%, -0%);
   }
 }
