@@ -14,7 +14,6 @@ body {
   overflow: hidden;
   position: fixed;
   z-index: 2;
-  /* display: table-cell; */
 }
 
 .wrapper {
@@ -24,8 +23,8 @@ body {
   overflow: hidden;
   color: rgb(247, 82, 82);
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
 }
 
 .sliding {
@@ -37,6 +36,7 @@ body {
   background-color: rgb(236, 178, 69);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   animation: animate 20s linear infinite;
+  z-index: 0;
 }
 .section2 {
   width: 100vw;
